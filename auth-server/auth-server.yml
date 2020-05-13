@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cems_service
+    username: postgres
+    password: manager
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+
+
+  jpa: 
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    properties:
+      hibernate:        
+        show_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+
+    hibernate:
+      ddl-auto: create-drop
