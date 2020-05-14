@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/cems_service_dev_db
     username: postgres
-    password: manager
+    password: {ciper}d3472f6b336ac7c418644f1aafef88d386d071b0d87f7dcf9b9cc641e29048dd
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
 
