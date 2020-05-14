@@ -1,29 +1,22 @@
- 
-
-spring.jpa.database: "POSTGRESQL"
-
-spring.datasource.platform:  "postgres"
-
-spring.jpa.show-sql: "false"
-
-spring.database.driverClassName: "org.postgresql.Driver"
 
 
-spring.datasource.url: "jdbc:postgresql://database:5432/cems_service"
-
+spring.datasource.url: "jdbc:postgresql://localhost:5432/cems_service"
 spring.datasource.username: "postgres"
-
-spring.datasource.password: "{cipher}b9e0f8121c2dcce507dfa8a87f39b20428138da4f4c6dd3a6c4aff584c4fa71b"
-
-spring.datasource.testWhileIdle: "true"
-
-spring.datasource.validationQuery: "SELECT 1"
-
+spring.datasource.password: "{cipher}ecee7ad255c6a1d7ad353dc81cee256888f8b1a049695f82c91e9b11c4532ed8"
+spring.datasource.driver-class-name: "org.postgresql.Driver"
 spring.datasource.initialization-mode: "always"
 
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
-
-spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: "false"
 
 spring.jpa.hibernate.ddl-auto: "create-drop"
 
+spring.jpa.properties.hibernate.show_sql: "true"
+spring.jpa.properties.hibernate.format_sql: "true"
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: "false"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQL94Dialect"
+spring.jpa.properties.hibernate.hbm2ddl.auto: "create-drop"
+spring.jpa.properties.hibernate.use_sql_comments: "false"
+spring.jpa.properties.hibernate.max_fetch_depth: "3"	
+spring.jpa.properties.hibernate.jdbc.batch_size: "10"
+spring.jpa.properties.hibernate.jdbc.fetch_size: "50"
+
+logging.file.name: "licensing-service.log"
